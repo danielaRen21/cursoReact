@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimeraApp Debe de mostarr el mensaje "Hola soy dani" 1`] = `
+<Fragment>
+  <h1>
+    Daniela
+  </h1>
+  <p>
+    hola
+  </p>
+</Fragment>
+`;
