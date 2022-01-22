@@ -1,16 +1,16 @@
-import { useState } from "react"
-
+import { useState } from "react";
 
 export const useForm = (initialState = {}) => {
-    const [values, setValues] = useState(initialState);
+  // recibe un objeto con las propiedades
+  const [values, setValues] = useState(initialState);
 
-    const handleInputChange = ({ target }) => {
+  const handleInputChange = ({ target }) => {
+    //para leer rapidamente
+    setValues({
+      ...values,
+      [target.name]: target.value,
+    });
+  };
 
-        setValues({
-            ...values,
-            [target.name]: target.value
-        });
-    }
-
-    return [values, handleInputChange];
-}
+  return [values, handleInputChange];
+};
